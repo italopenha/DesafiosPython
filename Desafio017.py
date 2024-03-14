@@ -5,6 +5,7 @@ import math
 cOposto = float(input('Digite o cateto oposto: '))
 cAdjacente = float(input('Digite o cateto adjacente: '))
 
-hipotenusa = math.sqrt(pow(cOposto, 2) + pow(cAdjacente, 2))
+# hipotenusa = math.sqrt(pow(cOposto, 2) + pow(cAdjacente, 2))
+hipotenusa = math.hypot(cOposto, cAdjacente)
 
-print(f'A hipotenusa é igual a {hipotenusa}')
+print(f'A hipotenusa é igual a {hipotenusa:.2f}')
