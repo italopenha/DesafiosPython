@@ -4,7 +4,7 @@
 # Quantas letras ela tem (sem considerar espaços)
 # Quantas letras tem a primeira palavra
 
-frase = input('Digite uma frase: ')
+frase = input('Digite uma frase: ').strip()
 
 print(f'Só em maiúsculas: {frase.upper()}')
 print(f'Só em minúsculas: {frase.lower()}')

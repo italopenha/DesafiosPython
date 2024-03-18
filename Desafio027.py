@@ -1,6 +1,6 @@
 # Este programa lê uma frase, e em seguida mostra a primeira e a última palavra.
 
-frase = input('Digite uma frase: ')
+frase = input('Digite uma frase: ').strip()
 
 lista_de_palavras = frase.split()
 
