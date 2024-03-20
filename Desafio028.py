@@ -6,10 +6,12 @@ aleatorio = random.randrange(6)
 
 n = int(input('Digite um número entre 0 e 5: '))
 
-print(f'Número gerado: {aleatorio}')
+print('-=-' * 10)
+print(f'Número sorteado: {aleatorio}')
+print('-=-' * 10)
 print(f'Seu número: {n}')
 
 if n == aleatorio:
     print('Você acertou!')
 else:
-    print('Você errou!') 
+    print('Você errou!')
