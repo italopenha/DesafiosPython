@@ -34,3 +34,5 @@ elif minhaJogada.lower() == 'tesoura' and objetoPC == 'pedra':
     print('O computador venceu!')
 elif minhaJogada.lower() == 'tesoura' and objetoPC == 'papel':
     print('Parabéns, você venceu!')
+else:
+    print(f'Empate!')

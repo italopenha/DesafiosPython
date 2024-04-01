@@ -3,11 +3,11 @@
 
 precoInicial = float(input('Digite o preço do produto: '))
 print(31 * '-')
-print('Escolha a condição de pagamento:')
-print('Digite 1 para à vista no dinheiro/cheque')
-print('Digite 2 para à vista no cartão')
-print('Digite 3 para em até 2x no cartão')
-print('Digite 4 para até 3x ou mais no cartão')
+print('''Escolha a condição de pagamento:
+Digite [1] para à vista no dinheiro/cheque
+Digite [2] para à vista no cartão
+Digite [3] para em até 2x no cartão
+Digite [4] para até 3x ou mais no cartão''')
 
 formaPagamento = input()
 print(31 * '-')
