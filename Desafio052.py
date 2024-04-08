@@ -8,6 +8,8 @@ for c in range(1, n + 1):
     if n % c == 0:
         contador += 1
 
+print(f'O número {n} foi divisível {contador} vezes.')
+
 if contador == 2:
     print('É primo!')
 else:

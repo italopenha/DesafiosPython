@@ -25,7 +25,6 @@ for c in range(0, 4):
         if idade < 20:
             mulheres_menores_20 += 1
 
-
 media = soma_idades / 4
 
 print(f'A média de idade desse grupo é de {media} anos.')
@@ -33,4 +32,3 @@ print(f'O mais velho(a) é {mais_velho}, com {maior} anos.')
 
 if mulheres_menores_20 > 0:
     print(f'Temos {mulheres_menores_20} mulher(es) com menos de 20 anos.')
-

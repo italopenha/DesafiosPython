@@ -5,12 +5,12 @@ primeiro_termo = int(input('Digite o primeiro termo: '))
 razao = int(input('Digite a razão: '))
 contador = 1
 
-print(primeiro_termo)
+print(primeiro_termo, end=' ')
 outros_termos = primeiro_termo
 
 while contador < 10:
     outros_termos += razao
-    print(outros_termos)
+    print(outros_termos, end=' ')
     contador += 1
 
 

@@ -8,4 +8,4 @@ for c in range(1, 7):
     if n % 2 == 0:
         soma_pares += n
 
-print(soma_pares)
+print(f'A soma dos pares é {soma_pares}.')
