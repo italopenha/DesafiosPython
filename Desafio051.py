@@ -12,5 +12,3 @@ while contador < 10:
     outros_termos += razao
     print(outros_termos, end=' ')
     contador += 1
-
-
