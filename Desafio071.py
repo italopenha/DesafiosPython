@@ -6,11 +6,10 @@ caixa possui cédulas de R$50, R$20, R$10 e R$1"""
 valor = int(input('Qual valor você quer sacar? R$'))
 
 cedulas = [50, 20, 10, 1]
-continuar = True
 contador = 0
 resto = int
 
-while continuar:
+while True:
     if contador == 0:
         cedula = valor // cedulas[0]
         print(f'{cedula} nota(s) de R$ 50,00')
@@ -19,16 +18,17 @@ while continuar:
         cedula = resto // cedulas[contador]
         resto = resto % cedulas[contador]
 
-    if contador == 1:
+    if contador == 1 and cedula > 0:
         print(f'{cedula} nota(s) de R$ 20,00')
-    elif contador == 2:
+    elif contador == 2 and cedula > 0:
         print(f'{cedula} nota(s) de R$ 10,00')
-    elif contador == 3:
+    elif contador == 3 and cedula > 0:
         print(f'{cedula} nota(s) de R$ 1,00')
 
     contador += 1
+
     if resto == 0:
-        continuar = False
+        break
 
 
 '''cedula50 = valor // cedulas[0]

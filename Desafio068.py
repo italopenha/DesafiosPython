@@ -3,16 +3,17 @@ o jogador perder, mostrando o total de vitórias consecutivas que ele conquistou
 no final do jogo."""
 import random
 
-jogador_venceu = True
 soma = 0
 vitorias_consecutivas = 0
 
-while jogador_venceu:
-    escolha_jogador = input('Digite P para par ou I para ímpar: ').lower().strip()
-
+while True:
     n_jogador = int(input('Escolha um número de 1 a 10: '))
-    n_computador = random.randint(1, 10)
+    n_computador = random.randint(0, 10)
     soma = n_jogador + n_computador
+    escolha_jogador = ' '
+
+    while escolha_jogador not in 'pi':
+        escolha_jogador = input('Par ou ímpar? [P/I] ').lower()[0].strip()
 
     print('-' * 32)
     print(f'O computador escolheu o número {n_computador}')
@@ -22,21 +23,18 @@ while jogador_venceu:
 
     if soma % 2 == 0:
         if escolha_jogador == 'p':
-            jogador_venceu = True
             vitorias_consecutivas += 1
             print('Deu par, você venceu!')
         else:
-            jogador_venceu = False
             print('Deu par, você perdeu!')
+            break
     else:
         if escolha_jogador == 'i':
-            jogador_venceu = True
             vitorias_consecutivas += 1
             print('Deu ímpar, você venceu!')
         else:
-            jogador_venceu = False
             print('Deu ímpar, você perdeu!')
+            break
+    print('Vamos jogar navamente...')
 
 print(f'Vitórias consecutivas: {vitorias_consecutivas}')
-
-

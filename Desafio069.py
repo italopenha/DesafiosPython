@@ -4,12 +4,11 @@ o programa pergunta se o usuário quer ou não continuar, e no final ele mostra:
 - Quantos homens foram cadastrados.
 - Quantas mulheres tem mais de 20 anos."""
 
-continuar = True
 pessoas_maiores_de_18 = 0
 homens = 0
 mulheres_maiores_de_20 = 0
 
-while continuar:
+while True:
     sexo = str
     resposta = str
 
@@ -19,7 +18,7 @@ while continuar:
     idade = int(input('Idade: '))
 
     while sexo != 'm' and sexo != 'f':
-        sexo = input('Sexo: [M/F] ').lower().strip()
+        sexo = input('Sexo: [M/F] ').lower()[0].strip()
 
     if idade > 18:
         pessoas_maiores_de_18 += 1
@@ -31,10 +30,10 @@ while continuar:
         mulheres_maiores_de_20 += 1
 
     while resposta != 's' and resposta != 'n':
-        resposta = input('Quer continuar? [S/N] ').lower().strip()
+        resposta = input('Quer continuar? [S/N] ').lower()[0].strip()
 
     if resposta == 'n':
-        continuar = False
+        break
 
 print('-' * 30)
 print(f'{pessoas_maiores_de_18} pessoa(s) tem mais de 18 anos.')

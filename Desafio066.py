@@ -6,12 +6,14 @@ n = 0
 numeros_digitados = 0
 soma = 0
 
-while n != 999:
+while True:
     n = int(input('Digite um valor (999 para parar): '))
 
-    if n != 999:
-        numeros_digitados += 1
-        soma += n
+    if n == 999:
+        break
+
+    numeros_digitados += 1
+    soma += n
 
 print(f'Números digitados: {numeros_digitados}')
 print(f'Soma entre eles: {soma}')
