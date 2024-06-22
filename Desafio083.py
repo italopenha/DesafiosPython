@@ -4,15 +4,19 @@ fechados na ordem correta."""
 
 expressao = input('Digite sua expressão: ')
 
-caracteres = []
+pilha = []
 
 for e in expressao:
-    caracteres.append(e)
+    if e == '(':
+        pilha.append('(')
+    elif e == ')':
+        if len(pilha) > 0:
+            pilha.pop()
+        else:
+            pilha.append(')')
+            break
 
-n_parenteses_direita = caracteres.count('(')
-n_parenteses_esquerda = caracteres.count(')')
-
-if n_parenteses_direita == n_parenteses_esquerda:
+if len(pilha) == 0:
     print('Sua expressão é válida!')
 else:
     print('Sua expressão está errada!')
