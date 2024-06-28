@@ -5,9 +5,8 @@ import time
 from random import randint
 
 n = int(input('Quantos jogos você quer que eu sorteie? '))
-print('-=' * 3, end=' ')
-print(f'SORTEANDO {n} JOGOS', end=' ')
-print('-=' * 3)
+
+print('-=' * 3, f'SORTEANDO {n} JOGOS', '-=' * 3)
 
 for c in range(n):
     jogo = []
@@ -16,4 +15,4 @@ for c in range(n):
         if num_sorteado not in jogo:
             jogo.append(num_sorteado)
     print(f'Jogo {c + 1}: {sorted(jogo)}')
-    time.sleep(1.5)
+    time.sleep(1)

@@ -12,13 +12,13 @@ segunda_linha = []
 
 for l in range(3):
     for c in range(3):
-        matriz_3x3[l][c] = int(input(f'Digite um valor para {l, c}: '))
+        matriz_3x3[l][c] = int(input(f'Digite um valor para [{l}, {c}]: '))
 
 print('-' * 100)
 
 for l in range(3):
     for c in range(3):
-        print(f'[ {matriz_3x3[l][c]} ]', end='')
+        print(f'[{matriz_3x3[l][c]:^5}]', end='')
 
         if matriz_3x3[l][c] % 2 == 0:
             soma_pares += matriz_3x3[l][c]
