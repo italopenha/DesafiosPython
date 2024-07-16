@@ -20,4 +20,4 @@ print('-' * 100)
 print(pessoa)
 
 for k, v in pessoa.items():
-    print(f'{k} tem o valor {v}')
+    print(f'  - {k} tem o valor {v}')

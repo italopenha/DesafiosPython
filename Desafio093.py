@@ -24,6 +24,6 @@ print('-' * 100)
 
 print(f'O jogador {jogador['nome']} jogou {partidas_jogadas} partidas.')
 for i in range(len(jogador['gols'])):
-    print(f'Na partida {i + 1}, fez {jogador['gols'][i]} gols.')
+    print(f'   => Na partida {i + 1}, fez {jogador['gols'][i]} gols.')
 
 print(f'Foi um total de {jogador['total_de_gols']} gols.')
